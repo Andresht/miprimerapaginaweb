@@ -1,0 +1,531 @@
+* {
+    padding: 0;
+    margin: 0;
+     /* box-sizing: border-box;  */
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  section[id]{
+    scroll-margin-top: 100px;
+  }
+
+body {
+    background-color: #bbeecd;
+    font-family: 'Josefin Sans', sans-serif;
+
+    /* font-family: "Poppins", sans-serif; */
+
+
+    color: #5d6063;
+    background-color: #bbeecd;
+    font-size: 16px;
+    text-align: center;
+    
+}
+
+/* ESTILOS GENERALES */
+
+.fuente-clara {
+    color: #eeeeee;
+  }
+  
+  .fuente-oscura {
+    color: #22211f;
+  }
+  
+  .fuente-acento {
+    color: #b59a61;
+  }
+
+
+  nav ul li {
+    font-size: 14px;
+    line-height: 30px;
+    /*text-transform: uppercase;*/
+  }
+
+  nav ul li a {
+  color: #eeeeee;
+}
+
+/* ENCABEZADO */
+
+header {
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: rgb(35, 168, 109);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9em;
+}
+
+/*.logo {
+    display: inline-block;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+  }*/
+  
+  header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+   }
+
+   /* .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: beige; 
+    
+      }  */
+
+.fecha {
+  position: fixed;
+  
+}
+
+  header nav {
+    height: 40px;
+     float: right; 
+  }
+
+  header a i {
+    color: white;
+    font-size: 3em;
+   
+}
+
+  nav ul.menu {
+    float: right;
+    margin-right: 30px;
+   
+  }
+
+  nav ul.menu li {
+    display: inline-block;
+    line-height:15px;
+    align-items: center;
+    margin: 5px;
+    background-color:white;
+    padding: 10px 10px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: Arial black;
+  }
+
+  nav ul.menu li a {
+    color: rgb(35, 168, 109);
+    font-size: 15px;
+    /*text-transform: uppercase;*/
+    padding: 10px 10px;
+    /* text-shadow: 0px 1px #000; */
+        
+  }
+
+  nav ul.menu li:hover {
+    background-color: rgb(35, 168, 109);
+    border-color: white rgb(35, 168, 109);
+    border-width: 3px;
+    border-style: solid;
+  }
+
+  nav ul.menu li a:hover {
+    color: white;
+  }
+
+  /* MENU */
+
+.checkbtn {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  /* FORMULARIO DE CONTACTO */
+
+  /* ------------- CSS General ------------- */
+
+
+
+/* ------------- Encabezado Contacto ------------- */
+
+footer {
+  color: rgb(35, 168, 109);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.form-header {
+  color: #5d6063;
+  text-align: center;
+  background-color: #bbeecd;
+  /* border: 1px solid #d6d9dc; */
+  border-radius: 3px;
+
+ width: 90%;
+  margin: 5px auto;
+  padding: 50px;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 30px 0 40px 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  background-color: #bbeecd;
+  /* background-color: #bdbdbd; */
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
+.form-row textarea {
+
+  /* font-family: "Helvetica", "Arial", sans-serif; */
+  
+  font-size: 14px;
+  background-color: #bbeecd;
+  /* background-color: #bdbdbd; */
+  border: 0;
+  border-radius: 6px;
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+  width: 100%;
+}
+
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+
+  color: #ffffff;
+  background-color: rgb(35, 168, 109);
+
+
+  border: none;
+  border-radius: 3px;
+
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+
+.form-row button:hover {
+  background-color: rgb(73, 192, 139);
+}
+
+
+.form-row button:active {
+  background-color: rgb(35, 168, 109);
+}
+
+
+  /* MEDIA QUERIES */
+  
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    header {
+      background-color: rgb(35, 168, 109);
+    }
+  
+    .checkbtn {
+      display: block;
+    }
+  
+    .navbar {
+      height: 0vh;
+      position: absolute;
+      top: 80px;
+      left: 0%;
+      width: 100%;
+      background: rgb(127, 219, 179);
+      text-align: center;
+  
+      transition: all 0.8s;
+      overflow: hidden;
+    }
+  
+    .navbar ul.menu {
+      float: none;
+      display: block;
+      width: 174px;
+      margin: auto;
+      opacity: 0;
+    }
+  
+    .navbar ul.menu li a:hover {
+     color: white;
+     
+    }
+    /* ACTIVE */
+    .navbar.active {
+      height: 100vh;
+      ;
+    }
+  
+    .navbar.active ul.menu {
+      opacity: 1;
+    }
+    
+  }
+  
+  /* .boton {
+    
+    color: rgb(35, 168, 109);
+    background-color: white;
+    padding: 15px 32px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: Arial black;
+} */
+
+/* .boton:hover{
+    background-color: rgb(35, 168, 109);
+    color: white;
+    border-color: white rgb(35, 168, 109);
+    border-width: 4px;
+    border-style: solid;
+      
+} */
+
+.h2acerca  {
+    display: inline-block;
+    background-color: rgb(35, 168, 109);
+    border-radius: 1em;
+    margin-top: 100px;
+    padding: 15px;
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 3px #000;
+   
+
+}
+
+.parrafo1{
+  text-align: justify;
+  line-height: 25px;
+}
+
+.h2trabajos {
+    display: inline-block;
+    background-color: rgb(35, 168, 109);
+    margin-top: 0.3em;
+    border-radius: 1em;
+    padding: 15px;
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 3px #000;
+}
+
+.h1-contacto {
+  display: inline-block;
+  background-color: rgb(35, 168, 109);
+  border-radius: 1em;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  text-shadow: 2px 3px #000;
+  
+  
+}
+
+.cont-acerca-de {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    line-height: 20px;
+    
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+.section-1-imagen {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+   
+    .trabajos.container {
+       
+        display: flex;
+        justify-content: center;
+              
+    }
+    
+    .galeria-imagenes1 {
+        
+        display: flex;
+        margin: 30px;
+        justify-content: center;
+        flex-wrap: wrap;        
+    }
+
+    .galeria-imagenes2 {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+               
+    }  
+
+     .containerimg {
+        background-color:rgb(127, 219, 179);
+        border-radius: 20px;
+        border: rgb(35, 168, 109) 3px dotted;
+        justify-content: space-between;
+        margin: 5px;
+
+    } 
+     
+    #img {
+        border: groove 1em rgb(35, 168, 109);
+        border-radius: 2em;
+        width: 300px;
+        height: 185px;
+        margin: 20px;
+        
+    }
+  
+                   
+    .titulo1 {
+    width: 330px;
+    height: 200px;
+    margin: 20px;
+    text-align: justify;
+    line-height: 20px;
+    font-size: 14px;
+    }
+    
+    .h3-titulo {
+        text-align: center;
+    }
+    .fecha {
+      
+      color: black;
+    }
+
+    .texto {
+      font-size: 16px;
+    }
+
+    .footer 
+    {
+        background-color: rgb(35, 168, 109);
+        flex-wrap: wrap;
+        /* font-family: arial; */
+        font-size: 15px; 
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        
+        margin: 0px;
+        padding: 40px;
+    } 
+
+    .footer a {
+      color: rgb(255, 255, 255);
+    }
+
+    
+    /* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+  .form-header {
+    padding: 50px;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .form-row input[type="text"],
+  .form-row input[type="email"] {
+    width: 250px;
+    height: initial;
+  }
+
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+
+  .form-row textarea {
+    /* font-family: "Helvetica", "Arial", sans-serif; */
+    font-size: 16px;
+  
+  
+    background-color: #bbeecd;
+    /* background-color: #bdbdbd; */
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+
+  .form-row button {
+    margin-left: 150px;
+}
+}
