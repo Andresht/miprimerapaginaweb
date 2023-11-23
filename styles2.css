@@ -275,9 +275,9 @@ footer {
 
 /* Estilos para pantallas más pequeñas (hasta 768px) */
 
-@media (min-width: 481px) and (max-width: 767px) {
+/* @media (min-width: 481px) and (max-width: 767px) { */
  
-/* @media (max-width: 768px) { */
+ @media (max-width: 600px) { 
     /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
     header {
       background-color: rgb(35, 168, 109);
