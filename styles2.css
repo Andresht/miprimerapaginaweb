@@ -16,7 +16,8 @@
 
 
 body {
-    background-color: #bbeecd;
+    background-color: #ffff;
+    /* background-color: #bbeecd; */
     font-family: 'Josefin Sans', sans-serif;
 
     /* font-family: "Poppins", sans-serif; */
@@ -173,7 +174,7 @@ footer {
 .form-header {
   color: #5d6063;
   text-align: center;
-  background-color: #bbeecd;
+  background-color: #ffffff;
   /* border: 1px solid #d6d9dc; */
   border-radius: 3px;
 
@@ -211,8 +212,8 @@ footer {
 
 .form-row input[type="text"],
 .form-row input[type="email"] {
-  background-color: #bbeecd;
-  /* background-color: #bdbdbd; */
+  /* background-color: #bbeecd; */
+  background-color: #bdbdbd;
   border: 0;
   border-radius: 6px;
   width: 100%;
@@ -230,8 +231,8 @@ footer {
   /* font-family: "Helvetica", "Arial", sans-serif; */
   
   font-size: 14px;
-  background-color: #bbeecd;
-  /* background-color: #bdbdbd; */
+  /* background-color: #bbeecd; */
+  background-color: #bdbdbd; 
   border: 0;
   border-radius: 6px;
   min-height: 200px;
@@ -275,9 +276,8 @@ footer {
 
 /* Estilos para pantallas más pequeñas (hasta 768px) */
 
-/* @media (min-width: 481px) and (max-width: 767px) { */
  
- @media (max-width: 600px) { 
+ @media (max-width: 768px) { 
     /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
     header {
       background-color: rgb(35, 168, 109);
